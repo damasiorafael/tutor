@@ -1,4 +1,7 @@
 <?php
+	//DADOS DE ACESSO ADMINISTRATOR
+	//USER: admin
+	//SENHA: mktead2014
 	//VARIAVEIS DE AMBIENTE
 	session_start();
 	$_SESSION[‘NOME’] = "damasio";
