@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html>
-<?php include('inc/head.php'); ?>
+<?php
+    include('inc/config.php');
+    include('inc/head.php');
+?>
 <body class="pag-login">
     <div class="logo_unopar"></div>
     <div class="container">
@@ -11,21 +14,28 @@
                         <h3 class="panel-title">Efetue seu login</h3>
                     </div>
                     <div class="panel-body">
-                        <form role="form" action="logar.php" method="post">
+                        <form role="form" action="logar.php" method="post" class="formLogin">
                             <fieldset>
                                 <div class="form-group">
-                                    <input class="form-control" placeholder="E-mail" name="email" type="email" autofocus>
+                                    <input class="form-control" placeholder="Login" name="login" type="login" autofocus>
                                 </div>
                                 <div class="form-group">
-                                    <input class="form-control" placeholder="Password" name="password" type="password" value="">
+                                    <input class="form-control" placeholder="Password" name="password" type="password">
                                 </div>
                                 <div class="checkbox">
                                     <label>
                                         <input name="remember" type="checkbox" value="Remember Me">Lembre-se de mim
                                     </label>
+                                    <?php 
+                                        if(isset($_SESSION['erro_login'])){
+                                    ?>
+                                            <span class="error"><?php echo $_SESSION['erro_login']; ?></span>
+                                    <?php
+                                        }
+                                    ?>
                                 </div>
                                 <!-- Change this to a button or input when using this as a form -->
-                                <a href="index.php" class="btn btn-lg btn-success btn-block">Entrar</a>
+                                <input type="submit" class="btn btn-success btn-large btn-lg btn-success btn-block" value="Entrar">
                             </fieldset>
                         </form>
                     </div>

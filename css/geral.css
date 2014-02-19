@@ -22,6 +22,7 @@ body { width: 100%; float: left; background: url("../img/bg_body.jpg") repeat 0 
 .container-tudo .container .middle .middle-right .middle-right-links { width: 100%; float: left; margin-top: 18px;}
 .container-tudo .container .middle .middle-right .middle-right-links a { width: 100%; float: left; text-align: center; line-height: 52px; background: #000; opacity: .50; color: #FFF; text-decoration: none; font-family: Gotham; font-size: 18px; margin-bottom: 10px;}
 .container-tudo .container .middle .middle-right .middle-right-links a:first-child { opacity: 0;}
+.container-tudo .container .middle .middle-right .middle-right-links a:first-child:hover { opacity: 0; cursor: default;}
 .container-tudo .container .middle .middle-right .middle-right-links a:hover { opacity: 1;}
 
 .footer { float: left; width: 100%; background: #000; padding-top: 15px;}

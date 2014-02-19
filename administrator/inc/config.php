@@ -1,7 +1,8 @@
 <?php
-	error_reporting(E_ALL ^ E_NOTICE);
-	error_reporting(1);
 	//VARIAVEIS DE AMBIENTE
+	session_start();
+	$_SESSION[‘NOME’] = "damasio";
+	//echo $_SESSION[‘NOME’];
 
 	if($_SERVER['SERVER_NAME'] == "localhost"){
 		$host 	= "localhost";
@@ -36,18 +37,27 @@
 
 	// FUNÇÃO PARA SELECT NO DB
     function selectdbcount($tabela,$campo,$valor){
-
         //Trata os campos para o BD
         $campos = $campo;
-
         $checa = "SELECT * FROM $tabela WHERE $campo = '$valor'";
-
         //CHECA NO BANCO DE DADOS
 		$checar = mysql_query($checa);
 		if(mysql_num_rows($checar) >= 1){
-			return mysql_num_rows($checar);
+			return true;
 		} else {
-			//echo "Já existe um cadastro utilizando esse CPF.";
+			return false;
+		}
+	}
+
+	// FUNÇÃO PARA SELECT NO DB
+    function logaBanco($tabela,$user,$password){
+        $checa = "SELECT username FROM users WHERE username = '$user' AND senha = '$password'";
+        //CHECA NO BANCO DE DADOS
+		$checar = mysql_query($checa);
+		if(mysql_num_rows($checar) >= 1){
+			return true;
+		} else {
+			return false;
 		}
 	}
 ?>
