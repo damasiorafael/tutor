@@ -50,6 +50,7 @@ $(function() {
 				}
 			}
 			$this.html(newArray.join(' '));
+			newArray = [];
 		});
 	}
 });
