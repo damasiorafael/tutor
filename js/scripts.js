@@ -22,10 +22,11 @@ $(document).ready(function(){
 		$('.overlayFicha').fadeOut();
 		$('.contentHowToWork').fadeOut();
 	});
-	$('.overlayFicha').click(function(){
-		$('.contentHowToWork').fadeOut("fast", function(){
-			$('.overlayFicha').fadeOut("fast");
-		});
+	$('.shareFace').click(function(e){
+		e.preventDefault();
+		e.stopPropagation();
+    	window.open('https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(location.href), 'facebook-share-dialog', 'width=626,height=436');
+     	return false;
 	});
 	$('#cpf').mask('999.999.999-99');
 	$('#cep').mask('99.999-999');

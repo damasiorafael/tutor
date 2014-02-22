@@ -6,6 +6,14 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt-br" lang="pt-br">
 	<?php include("inc/head.php"); ?>
 	<body>
+		<div id="fb-root"></div>
+		<script>(function(d, s, id) {
+		  var js, fjs = d.getElementsByTagName(s)[0];
+		  if (d.getElementById(id)) return;
+		  js = d.createElement(s); js.id = id;
+		  js.src = "//connect.facebook.net/pt_BR/all.js#xfbml=1&appId=516115495070345";
+		  fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));</script>
 		<div class="container-tudo">
 			<div class="container">
 				<div class="topo"></div>
@@ -53,7 +61,10 @@
 					<div class="tutor_confirm"></div>
 					<div class="msg_confirm"></div>
 					<div class="msg_confirm_compartilha">
-						<div class="bt_compartilhar"></div>
+						<div class="bt_compartilhar">
+							<!--<a href="#" class="shareFace">Compartilhar</a>-->
+							<div class="fb-share-button" data-href="http://tutor.unoparead.com.br/" data-width="626" data-type="button"></div>
+						</div>
 					</div>
 					<div class="img_academico_confirm"></div>
 				</div>
