@@ -21,8 +21,6 @@ body { width: 100%; float: left; background: url("../img/bg_body.jpg") repeat 0 
 .container-tudo .container .middle .middle-right .middle-right-circle { width: 100%; height: 260px; float: left; margin: 10px auto 0; background: url("../img/bg_middle_right_circle.png") no-repeat center 0;}
 .container-tudo .container .middle .middle-right .middle-right-links { width: 100%; float: left; margin-top: 18px;}
 .container-tudo .container .middle .middle-right .middle-right-links a { width: 100%; float: left; text-align: center; line-height: 52px; background: #000; opacity: .50; color: #FFF; text-decoration: none; font-family: Gotham; font-size: 18px; margin-bottom: 10px;}
-.container-tudo .container .middle .middle-right .middle-right-links a:first-child { opacity: 0;}
-.container-tudo .container .middle .middle-right .middle-right-links a:first-child:hover { opacity: 0; cursor: default;}
 .container-tudo .container .middle .middle-right .middle-right-links a:hover { opacity: 1;}
 
 .footer { float: left; width: 100%; background: #000; padding-top: 15px;}
@@ -32,9 +30,9 @@ body { width: 100%; float: left; background: url("../img/bg_body.jpg") repeat 0 
 .footer .logo_unopar span { display: none;}
 
 /* FORMULARIO FICHA DE INSCRICAO */
-.overlayFicha { width: 100%; height: 100%; background: #000; position: absolute; top: 0; left: 0; opacity: .80; display: none;}
-.contentFicha { width: 980px; position: absolute; left: 50%; top: 50px; margin-left: -490px; z-index: 997; display: none;}
-#fichaInscricao { float: left; width: 980px; background: #FFF; border-radius: 10px; position: relative;}
+.overlayFicha { width: 100%; height: 100%; background: #000; position: absolute; top: 0; left: 0; opacity: .80; display: none; cursor: pointer;}
+.contentFicha, .contentHowToWork { width: 980px; position: absolute; left: 50%; top: 50px; margin-left: -490px; z-index: 997; display: none;}
+#fichaInscricao, .imgHowToWork { float: left; width: 980px; background: #FFF; border-radius: 10px; position: relative;}
 #fichaInscricao ul { float: left; width: 898px; margin-top: 60px; padding-left: 40px;}
 #fichaInscricao ul li { float: left; margin-bottom: 10px; position: relative;}
 #fichaInscricao ul li label { width: 160px; float: left; font-size: 12px; font-family: Gotham; line-height: 28px;}
@@ -47,6 +45,11 @@ body { width: 100%; float: left; background: url("../img/bg_body.jpg") repeat 0 
 #fichaInscricao ul li div select:focus { border: 1px solid #5BC6C0; box-shadow: 0px 0px 4px #5BC6C0;}
 #fichaInscricao ul li div button { width: 460px; float: left; text-align: center; line-height: 52px; background: #000; color: #FFF; text-decoration: none; font-family: Gotham; font-size: 18px;}
 #fichaInscricao ul li div button:hover { opacity: .50; cursor: pointer;}
+
+/*IMG HOW TO WORK */
+.imgHowToWork { padding: 10px 0;}
+.imgHowToWork img { display: block; margin: auto;}
+.videoHowToWork{ width: 640px; margin: 10px auto 30px;}
 
 /* sizes */
 .size1 { width: 50px;}

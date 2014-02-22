@@ -6,13 +6,26 @@ $(document).ready(function(){
 		$('.overlayFicha').fadeIn();
 		$('.contentFicha').height($('#fichaInscricao').height());
 		$('.overlayFicha').height($(document).height());
-		$('.contentFicha').css({});
 		$('.overflow-loader').height($('#fichaInscricao').height());
 		$('.cont-msg-success').height($('#fichaInscricao').height());
+	});
+	$('a[rel="como_funciona"]').click(function(e){
+		e.preventDefault();
+		e.stopPropagation();
+		$('.contentHowToWork').fadeIn();
+		$('.overlayFicha').fadeIn();
+		$('.contentHowToWork').height($('.contentHowToWork img').height());
+		$('.overlayFicha').height($(document).height());
 	});
 	$('.bt_fechar').click(function(){
 		$('.contentFicha').fadeOut();
 		$('.overlayFicha').fadeOut();
+		$('.contentHowToWork').fadeOut();
+	});
+	$('.overlayFicha').click(function(){
+		$('.contentHowToWork').fadeOut("fast", function(){
+			$('.overlayFicha').fadeOut("fast");
+		});
 	});
 	$('#cpf').mask('999.999.999-99');
 	$('#cep').mask('99.999-999');
@@ -50,6 +63,9 @@ $(document).ready(function(){
 			email: {
 				required: true,
 				email: true
+			},
+			celular: {
+				required: true
 			}
 		},
 		messages: {
@@ -83,6 +99,9 @@ $(document).ready(function(){
 			email: {
 				required: "Este campo &eacute; obrigat&oacute;rio!",
 				email: "Preencha o e-mail de forma correta!"
+			},
+			celular: {
+				required: "Este campo &eacute; obrigat&oacute;rio!"
 			}
 		},
 		submitHandler: function(form){

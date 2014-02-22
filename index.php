@@ -16,7 +16,7 @@
 						<div class="middle-right-conteudo">
 							<div class="middle-right-circle"></div>
 							<div class="middle-right-links">
-								<a href="" rel="" title="COMO FUNCIONA?">COMO FUNCIONA?</a>
+								<a href="" rel="como_funciona" title="COMO FUNCIONA?">COMO FUNCIONA?</a>
 								<a href="documents/regulamento.pdf" rel="regulamento" title="REGULAMETO" target="_blank">REGULAMENTO</a>
 								<a href="ficha.php" rel="ficha" class="abrePop" title="FICHA DE INSCRIÇÃO">FICHA DE INSCRIÇÃO</a>
 							</div>
@@ -33,6 +33,16 @@
 				</a>
 			</div>
 		</div>
+		<div class="contentHowToWork">
+			<div class="bt_fechar"></div>
+			<div class="imgHowToWork">
+				<img src="img/img_how_work.png" />
+				<div class="videoHowToWork">
+					<iframe width="640" height="360" src="//www.youtube.com/embed/pu2UY2xLuuI" frameborder="0" allowfullscreen></iframe>
+				</div>
+			</div>
+		</div>
+		<!-- FICHA DE INSCRICAO -->
 		<div class="overlayFicha"></div>
 		<div class="contentFicha">
 			<div class="bt_fechar"></div>
