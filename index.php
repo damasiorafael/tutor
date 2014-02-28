@@ -20,6 +20,9 @@
 				<div class="middle">
 					<div class="middle-left"></div>
 					<div class="middle-right">
+						<div class="bt-ficha">
+							<a href="ficha.php" rel="ficha" class="abrePop" title="FICHA DE INSCRIÇÃO">FICHA DE INSCRIÇÃO</a>
+						</div>
 						<div class="middle-right-top"></div>
 						<div class="middle-right-conteudo">
 							<div class="middle-right-circle"></div>

@@ -17,7 +17,10 @@ body { width: 100%; float: left; background: url("../img/bg_body.jpg") repeat 0 
 .container-tudo .container .topo { width: 782px; height: 203px; margin: 35px auto; background: url("../img/bg_topo.png") no-repeat 0 0;}
 .container-tudo .container .middle .middle-left { width: 388px; height: 535px; float: left; background: url("../img/bg_middle_left.png") no-repeat 0 0;}
 
-.container-tudo .container .middle .middle-right { float: right; width: 461px;}
+.container-tudo .container .middle .middle-right { float: right; width: 461px; position: relative;}
+.container-tudo .container .middle .middle-right .bt-ficha { position: absolute; top: -67px; right: 0;}
+.container-tudo .container .middle .middle-right .bt-ficha a { width: 207px; height: 67px; display: block; background: url('../img/bt-inscrever-sec.png') no-repeat 0 -67px; z-index: 900; text-indent: -3000em; overflow: hidden;}
+.container-tudo .container .middle .middle-right .bt-ficha a:hover { background-position: 0 0;}
 .container-tudo .container .middle .middle-right .middle-right-top { width: 461px; height: 71px; float: left; background: url("../img/bg_middle_right_top.png") no-repeat 0 0;}
 .container-tudo .container .middle .middle-right .middle-right-circle { width: 100%; height: 260px; float: left; margin: 10px auto 0; background: url("../img/bg_middle_right_circle.png") no-repeat center 0;}
 .container-tudo .container .middle .middle-right .middle-right-links { width: 100%; float: left; margin-top: 18px;}
